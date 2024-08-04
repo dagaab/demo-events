@@ -75,11 +75,11 @@ function LayoutProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <div className="bg-gray-200  lg:px-20 px-5">
+    <div className="bg-gray-200 lg:px-20 px-5">
       {isPrivateRoute && (
         <div className="bg-white flex justify-between items-center shadow px-3 py-5">
           <h1
-            className=" font-semibold text-1xl cursor-pointer text-grey-900"
+            className="font-semibold text-1xl cursor-pointer text-blue-900"
             onClick={() => router.push("/")}
           >
             DEMO EVENTS

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import "remixicon/fonts/remixicon.css";
+import "remixicon/fonts/remixicon.css";
 import UILibraryProvider from "@/providers/UILibraryProvider";
 import LayoutProvider from "@/providers/LayoutProvider";
 import {
@@ -28,8 +28,7 @@ export default function RootLayout({
           <UILibraryProvider>
             <LayoutProvider>{children}</LayoutProvider>
           </UILibraryProvider>
-        </body>
-        <footer>
+          <footer>
             <SignedOut>
               <SignInButton />
             </SignedOut>
@@ -37,6 +36,7 @@ export default function RootLayout({
               <UserButton />
             </SignedIn>
           </footer>
+        </body>
       </html>
     </ClerkProvider>
   );
