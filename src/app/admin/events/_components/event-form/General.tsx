@@ -10,6 +10,7 @@ export interface EventFormStepProps {
   setNewlySelectedImages: React.Dispatch<React.SetStateAction<any[]>>;
   alreadyUploadedImages: string[];
   setAlreadyUploadedImages: React.Dispatch<React.SetStateAction<string[]>>;
+  loading: boolean;
 }
 
 function General({
