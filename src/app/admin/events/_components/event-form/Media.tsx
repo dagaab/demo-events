@@ -60,7 +60,7 @@ function Media({
       {/* show newly selected image */}
       <div className="flex gap-5">
         {alreadyUploadedImages?.map((image: any, index: number) => (
-          <div className="border flex flex-col gap-5 rounded pb-5">
+          <div key={index} className="border flex flex-col gap-5 rounded pb-5">
             <img
               key={index}
               src={image}
