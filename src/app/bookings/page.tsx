@@ -5,6 +5,8 @@ import BookingModel from "@/models/booking-model";
 import React from "react";
 import dayjs from "dayjs";
 import PageTitle from "@/components/PageTitle";
+import ClientComponent from "@/components/clientComponent";
+
 connectDB();
 
 async function BookingsPage() {
@@ -46,6 +48,9 @@ async function BookingsPage() {
         {getProperty({ key: "Booked on", value: 
       dayjs(booking.createdAt).format("DD/MM/YYYY hh:mm A") })}
       </div>
+     <div>
+     <ClientComponent /> 
+     </div>
     </div>
   );
 })}

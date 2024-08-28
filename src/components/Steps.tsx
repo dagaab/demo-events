@@ -15,20 +15,22 @@ function Steps({ stepNames, stepsContent, activeStep }: StepsProps) {
             <div
               className={`flex flex-col gap-2 ${
                 index !== stepNames.length - 1 && "w-full"
-              }
-            }`}
+              }`}
             >
               <div className="flex items-center">
                 <div
-                  className={`h-8 w-8 rounded-full bg-black text-white flex justify-center items-center
-                ${
-                  activeStep >= index
-                    ? "bg black text-white"
-                    : "bg-gray-500 text gray-200"
-                }`}
+                  className={`h-8 w-8 rounded-full  flex justify-center items-center
+                 ${
+                   activeStep >= index
+                     ? "bg-black text-white"
+                     : "bg-gray-500 text-gray-200"
+                 }
+                
+                `}
                 >
                   {index + 1}
                 </div>
+
                 {activeStep > index && index !== stepNames.length - 1 && (
                   <div className="h-1 w-full bg-black"></div>
                 )}

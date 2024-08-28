@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "email": "cp .env.local ./node_modules/react-email && email dev --dir src/emails --port 3001"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.2.10",
     "@nextui-org/react": "^2.4.6",
+    "@react-email/components": "^0.0.23",
     "@stripe/react-stripe-js": "^2.7.3",
     "@stripe/stripe-js": "^4.2.0",
     "axios": "^1.7.3",
@@ -22,8 +24,11 @@
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
+    "react-email": "3.0.0",
     "react-hot-toast": "^2.4.1",
     "remixicon": "^4.3.0",
+    "resend": "^4.0.0",
+    "sharp": "^0.33.5",
     "stripe": "^16.6.0"
   },
   "devDependencies": {
