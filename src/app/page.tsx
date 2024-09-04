@@ -9,6 +9,7 @@ import {
 import { EventType } from "@/interfaces/events";
 import EventModel from "@/models/event-model";
 import Link from "next/link";
+import Hero from '@/components/heroComponent';
 connectDB();
 
 export default async function Home() {
@@ -22,10 +23,10 @@ export default async function Home() {
   // console.log("mongoUserId", mongoUserId);
   return (
     <div>
-      {/* introduction */}
-    {/* <div className="flex justify-center">
-      <p className="">Check our events</p>
-      </div>  */}
+      {/* Hero component */}
+   <div className="flex items-center justify-center flex-col gap-10">
+    <Hero />
+   </div>
 
       <div className="flex items-center justify-center flex-col gap-10">
         {events.map((event) => (

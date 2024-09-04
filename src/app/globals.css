@@ -7,10 +7,62 @@
     font-family: "Montserrat", sans-serif !important;
     font-weight: 500 !important;
 }
-.font-semibold {
+/* .font-semibold {
     font-weight: 700 !important;
-}
+} */
 
 th{
     border-radius: 0px !important;
+}
+
+#hero_container {
+    display: inline-block;
+    min-height: 70vh;
+    
+}
+
+#hero_headline {
+    position: relative;
+    width: 100vw;
+    background: rgb(22,130,94);
+    background: radial-gradient(circle, rgb(47, 81, 149) 0%, rgb(39, 71, 168) 30%, rgba(33,95,74,1) 100%);
+    height: 40vh;
+}
+
+#hero_h1 {
+        padding-top: 1em;
+        font-size: 4em;
+        font-weight: 600;
+    }
+
+#cover_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1em;
+}  
+
+#image {
+    border-radius: 25px;
+    border: solid 3px;
+    border-color: black;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.phone_shadow {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5))
+}
+
+@media (max-width: 800px) {
+    #cover_images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #hero_container {
+        min-height: 130vh;
+        
+    }
 }
