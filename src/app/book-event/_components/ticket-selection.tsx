@@ -84,7 +84,7 @@ function TicketSelection({ event, eventBookings }: TicketSelectionProps) {
         <h1 className="text-xl font-semibold text-gray-700">
           Select Ticket Type
         </h1>
-        <div className="grid grid-cols-4 gap-2 mt-2">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2 mt-2">
           {event.ticketTypes.map((ticketType) => (
             <div
               key={ticketType.name}

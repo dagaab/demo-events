@@ -5,10 +5,6 @@ import UILibraryProvider from "@/providers/UILibraryProvider";
 import LayoutProvider from "@/providers/LayoutProvider";
 import {
   ClerkProvider,
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton,
 } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
@@ -29,12 +25,7 @@ export default function RootLayout({
             <LayoutProvider>{children}</LayoutProvider>
           </UILibraryProvider>
           <footer>
-            <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton />
-            </SignedIn>
+      
           </footer>
         </body>
       </html>

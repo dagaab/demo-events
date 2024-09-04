@@ -31,7 +31,7 @@ export default async function Home() {
         {events.map((event) => (
           <div key={event._id}>
           
-          <Card isFooterBlurred className="w-[600px] h-[300px] col-span-12 sm:col-span-5">
+          <Card isFooterBlurred className="md:w-[600px] md:h-[300px] col-span-12 sm:col-span-5">
       <CardHeader className="absolute z-10 top-1 flex-col items-start">
         <h4 className="text-white font-medium text-2xl bg-black/80 p-2">{event.name}</h4>
         {/* <p className="text-tiny text-white/60 uppercase font-bold">{event.description}</p> */}

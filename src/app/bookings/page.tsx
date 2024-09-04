@@ -40,7 +40,7 @@ async function BookingsPage() {
         <h1 className="text-2xl font-semibold">{booking.event.name}</h1>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 p-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 p-3">
       {getProperty({ key: "Booking Id", value: booking._id })}
         {getProperty({ key: "Ticket Type", value: booking.ticketType })}
         {getProperty({ key: "Tickets Count", value: booking.ticketsCount })}

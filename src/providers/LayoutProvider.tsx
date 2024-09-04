@@ -1,5 +1,5 @@
 "use client";
-import { UserButton } from "@clerk/nextjs";
+import { UserButton, SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 import {
   Button,
   Dropdown,
@@ -26,14 +26,6 @@ function LayoutProvider({ children }: { children: React.ReactNode }) {
     {
       title: "Bookings",
       path: "/admin/bookings",
-    },
-    {
-      title: "Users",
-      path: "/admin/users",
-    },
-    {
-      title: "Reports",
-      path: "/admin/reports",
     },
   ];
 
@@ -105,6 +97,13 @@ function LayoutProvider({ children }: { children: React.ReactNode }) {
                 ))}
               </DropdownMenu>
             </Dropdown>
+            <div className="flex gap-4">
+          <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+            </SignedIn>
+          </div>
             <UserButton afterSignOutUrl="/" />
           </div>
         </div>

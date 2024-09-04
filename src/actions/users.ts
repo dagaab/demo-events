@@ -25,7 +25,7 @@ export const handleNewUserRegistration = async () => {
     await newUser.save();
     return newUser;
   } catch (error: any) {
-    throw new Error(error);
+    throw new Error(error.message);
   }
 };
 
